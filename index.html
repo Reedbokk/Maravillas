@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Maravillas del Mundo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="1.ico" type="image/x-icon">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Contenedor de logo y título -->
+        <div class="header-container">
+            <img src="1.png" alt="Logo de las 7 Maravillas" class="logo">
+            <h1>Las 7 Maravillas del Mundo</h1>
+        </div>
+        
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showSection('moderno')">Mundo Moderno</a></li>
+                <li><a href="#" onclick="showSection('antiguo')">Mundo Antiguo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Card de introducción -->
+    <section class="intro-section">
+        <div class="intro-card">
+            <h2>Bienvenido a las 7 Maravillas del Mundo</h2>
+            <p>Descubre las maravillas antiguas y modernas que han maravillado al mundo a lo largo de los siglos.</p>
+        </div>
+    </section>
+
+    <!-- Carrusel de las Maravillas Modernas -->
+    <section id="moderno" class="carousel-section hidden">
+        <h2>7 Maravillas del Mundo Moderno</h2>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="moveSlide('carouselModern', -1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide" id="carouselModern">
+                    <img src="img/Coliseo.jpg" alt="Coliseo (Italia)">
+                    <img src="img/cristo.jpg" alt="Cristo Redentor (Brasil)">
+                    <img src="img/Kukulkan.JPG" alt="Pirámide de Kukulkán en Chichén Itzá (México)">
+                    <img src="img/Muralla.jpg" alt="La Muralla China (China)">
+                    <img src="img/Petra.jpg" alt="Petra (Jordania)">
+                    <img src="img/Pichu.jpg" alt="Machu Picchu (Perú)">
+                    <img src="img/TajMahal.jpg" alt="Taj Mahal (India)">
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide('carouselModern', 1)">&#10095;</button>
+        </div>
+
+        <!-- Cards de Información -->
+        <div class="card-container">
+            <div class="card">
+                <img src="img/Coliseo.jpg" alt="Coliseo">
+                <p>Coliseo (Italia)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Coliseo es el anfiteatro más grande jamás construido y está ubicado en Roma.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/cristo.jpg" alt="Cristo Redentor">
+                <p>Cristo Redentor (Brasil)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Cristo Redentor se encuentra en Río de Janeiro y es una de las maravillas modernas.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Kukulkan.JPG" alt="Pirámide de Kukulkán">
+                <p>Pirámide de Kukulkán en Chichén Itzá (México)</p>
+                <div class="card-overlay">
+                    <div class="card-text">La Pirámide de Kukulkán es una estructura maya impresionante en Chichén Itzá, México.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Muralla.jpg" alt="La Muralla China">
+                <p>La Muralla China (China)</p>
+                <div class="card-overlay">
+                    <div class="card-text">La Gran Muralla China es una de las construcciones más icónicas y largas del mundo.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Petra.jpg" alt="Petra">
+                <p>Petra (Jordania)</p>
+                <div class="card-overlay">
+                    <div class="card-text">Petra es una antigua ciudad esculpida en roca y uno de los lugares más visitados de Jordania.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Pichu.jpg" alt="Machu Picchu">
+                <p>Machu Picchu (Perú)</p>
+                <div class="card-overlay">
+                    <div class="card-text">Machu Picchu, ubicada en Perú, es una antigua ciudad inca y una maravilla arquitectónica.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/TajMahal.jpg" alt="Taj Mahal">
+                <p>Taj Mahal (India)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Taj Mahal es un mausoleo en India, famoso por su belleza arquitectónica y significado histórico.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de las Maravillas Antiguas -->
+    <section id="antiguo" class="carousel-section hidden">
+        <h2>7 Maravillas del Mundo Antiguo</h2>
+        <div class="carousel-wrapper">
+            <button class="carousel-btn prev" onclick="moveSlide('carouselAntiguo', -1)">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide" id="carouselAntiguo">
+                    <img src="img/piramide.jpg" alt="Gran Pirámide de Guiza (Egipto)">
+                    <img src="img/Halicarnaso.jpg" alt="Mausoleo de Halicarnaso (Turquía)">
+                    <img src="img/zeus.jpg" alt="Estatua de Zeus en Olimpia (Grecia)">
+                    <img src="img/Babilonia.jpg" alt="Los Jardines Colgantes de Babilonia (Irak)">
+                    <img src="img/Rodas.jpg" alt="El Coloso de Rodas (Grecia)">
+                    <img src="img/Efeso.jpg" alt="Templo de Artemisa en Éfeso (Turquía)">
+                    <img src="img/Alejandria.jpg" alt="Faro de Alejandría (Egipto)">
+                </div>
+            </div>
+            <button class="carousel-btn next" onclick="moveSlide('carouselAntiguo', 1)">&#10095;</button>
+        </div>
+
+        <!-- Cards de Información -->
+        <div class="card-container">
+            <div class="card">
+                <img src="img/piramide.jpg" alt="Gran Pirámide de Guiza">
+                <p>Gran Pirámide de Guiza (Egipto)</p>
+                <div class="card-overlay">
+                    <div class="card-text">La Gran Pirámide es la más antigua de las Siete Maravillas y la única que aún existe.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Halicarnaso.jpg" alt="Mausoleo de Halicarnaso">
+                <p>Mausoleo de Halicarnaso (Turquía)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Mausoleo fue una tumba monumental en Halicarnaso, una de las grandes obras de la antigüedad.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/zeus.jpg" alt="Estatua de Zeus en Olimpia">
+                <p>Estatua de Zeus en Olimpia (Grecia)</p>
+                <div class="card-overlay">
+                    <div class="card-text">La Estatua de Zeus, hecha por Fidias, fue una de las esculturas más importantes de la Grecia clásica.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Babilonia.jpg" alt="Jardines Colgantes de Babilonia">
+                <p>Los Jardines Colgantes de Babilonia (Irak)</p>
+                <div class="card-overlay">
+                    <div class="card-text">Los Jardines Colgantes fueron legendarios, construidos en la antigua Babilonia.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Rodas.jpg" alt="El Coloso de Rodas">
+                <p>El Coloso de Rodas (Grecia)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Coloso fue una gigantesca estatua del dios Helios que se encontraba en la ciudad de Rodas.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Efeso.jpg" alt="Templo de Artemisa">
+                <p>Templo de Artemisa en Éfeso (Turquía)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Templo de Artemisa era una de las estructuras más grandes y hermosas del mundo antiguo.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Alejandria.jpg" alt="Faro de Alejandría">
+                <p>Faro de Alejandría (Egipto)</p>
+                <div class="card-overlay">
+                    <div class="card-text">El Faro de Alejandría, en la isla de Faros, era uno de los más altos de su tiempo.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 7 Maravillas del Mundo</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
